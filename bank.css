@@ -51,23 +51,23 @@ button {
 }
 
 #deposit-card {
-    background-color: blue;
+    background-color: rgb(166, 166, 184);
 }
 
 #withdraw-card {
-    background-color: blueviolet;
+    background-color: #807888;
 }
 
 #balance-card {
-    background-color: violet;
+    background-color: rgb(249, 111, 113);
 }
 
 #deposit-amount {
-    background-color: brown;
+    background-color: rgb(246, 120, 120);
 }
 
 #withdraw-amount {
-    background-color: red;
+    background-color: rgb(255, 136, 136);
 }
 
 .card-body {
@@ -83,7 +83,7 @@ table {
 th,
 td {
     padding: 8px 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #f78383;
     text-align: left;
 }
 
@@ -92,7 +92,6 @@ th {
     color: white;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     #display1 {
         width: 80%;

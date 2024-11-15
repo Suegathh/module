@@ -1,12 +1,13 @@
 document.getElementById('bank-btn').addEventListener('click', bankBtn);
 let mainBody = document.getElementById('main');
-//mainBody.style.display = 'none';
+mainBody.style.display = 'none';
 
 function bankBtn() {
     let submit = document.getElementById('display1');
     let userN = document.getElementById('userName').value;
     let userP = document.getElementById('userPwd').value;
 
+    
     if (userN === '') {
         alert('Invalid Name');
     } else if (userP === '') {
@@ -18,7 +19,6 @@ function bankBtn() {
 }
 
 document.getElementById('depositBtn').addEventListener('click', deposit_btn);
-
 document.getElementById('withdrawBtn').addEventListener('click', withdraw_btn);
 
 function table1(description, amount, balance) {
@@ -45,9 +45,9 @@ function deposit_btn() {
         return;
     }
 
-    let deposit_number = parseFloat(document.getElementById('depositNo').innerHTML);
+    let deposit_number = parseFloat(document.getElementById('depo-am').innerHTML);
     let total_deposit = deposit_number + input_amount;
-    document.getElementById('depositNo').innerHTML = total_deposit;
+    document.getElementById('depo-am').innerHTML = total_deposit;
 
     let balance = parseFloat(document.getElementById('bal-am').innerHTML);
     let total_balance = balance + input_amount;
@@ -74,14 +74,11 @@ function withdraw_btn() {
         return;
     }
 
-    let withdraw_number = parseFloat(document.getElementById('withdrawNo').innerHTML);
-
+    let withdraw_number = parseFloat(document.getElementById('with-am').innerHTML);
     let total_withdraw = withdraw_number + input_amount;
-
-    document.getElementById('withdrawNo').innerHTML = total_withdraw;
+    document.getElementById('with-am').innerHTML = total_withdraw;
 
     let total_balance = balance - input_amount;
-    
     document.getElementById('bal-am').innerHTML = total_balance;
 
     table1('Withdrawal', -input_amount, total_balance);
