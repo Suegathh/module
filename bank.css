@@ -1,0 +1,45 @@
+body{
+    background-color: aquamarine;
+}
+#display1{
+    background-color: rgb(106, 232, 232);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 400px;
+}
+.heading{
+    font-weight: bold;
+    margin: 20px;
+}
+.row{
+    margin-top: 30px;
+    justify-content: space-evenly;
+    height: 150px;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+#deposit-card{
+    background-color: blue;
+}
+#withdraw-card{
+    background-color: blueviolet;
+}
+#balance-card{
+    background-color: violet;
+}
+#deposit-amount{
+    background-color: brown;
+}
+#withdraw-amount{
+    background-color: red;
+}
+table { width: 80%; margin: 20px auto; border-collapse: collapse; } 
+th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; } 
+th { background-color: #4CAF50; color: white; }
