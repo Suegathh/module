@@ -18,6 +18,7 @@ function bankBtn() {
 }
 
 document.getElementById('depositBtn').addEventListener('click', deposit_btn);
+
 document.getElementById('withdrawBtn').addEventListener('click', withdraw_btn);
 
 function table1(description, amount, balance) {
@@ -74,10 +75,13 @@ function withdraw_btn() {
     }
 
     let withdraw_number = parseFloat(document.getElementById('withdrawNo').innerHTML);
+
     let total_withdraw = withdraw_number + input_amount;
+
     document.getElementById('withdrawNo').innerHTML = total_withdraw;
 
     let total_balance = balance - input_amount;
+    
     document.getElementById('bal-am').innerHTML = total_balance;
 
     table1('Withdrawal', -input_amount, total_balance);
